@@ -1,1 +1,3 @@
-cosole.log("hi")
+import './style.css';
+import BurgerImage from './image.jpg';
+
