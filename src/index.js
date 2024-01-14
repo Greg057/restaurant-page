@@ -1,6 +1,8 @@
 import './style.css';
 import logoImage from "./logo.png"
 import { createHome } from './home';
+import { createMenu } from './menu';
+import { createContact } from './contact';
 
 
 function createHeader() {
@@ -11,17 +13,13 @@ function createHeader() {
     logo.id = "logo"
     logo.src = logoImage
     
-
     const navBar = document.createElement("nav")
-    const homeButton = document.createElement("button")
-    homeButton.textContent = "Home"
-    const menuButton = document.createElement("button")
-    menuButton.textContent = "Menu"
+
     const contactButton = document.createElement("button")
     contactButton.textContent = "Contact Us"
-    navBar.appendChild(homeButton)
-    navBar.appendChild(menuButton)
-    navBar.appendChild(contactButton)
+    navBar.appendChild(createButton("Home", createHome()))
+    navBar.appendChild(createButton("Menu", createMenu()))
+    navBar.appendChild(createButton("Contact Us", createContact()))
 
     header.appendChild(logo)
     header.appendChild(navBar)
@@ -30,11 +28,26 @@ function createHeader() {
 
 }
 
+function createButton(text, target) {
+    const button = document.createElement("button")
+    button.textContent = text
+    button.addEventListener("click", () => {
+        const main = document.querySelector(".main")
+        main.innerHTML = "";
+        main.appendChild(target)
+    })
+    return button
+}
+
+
 function buildPage() {
     const content = document.querySelector("#content")
+    const main = document.createElement("div")
+    main.classList.add("main")
       
     content.appendChild(createHeader())
-    content.appendChild(createHome())
+    content.appendChild(main)
+    main.appendChild(createHome())
 }
 
 buildPage();

@@ -34,7 +34,68 @@ nav button {
     color: whitesmoke;
 }
 
-#burger-img {
+.home {
+    position: relative;
+    display: inline-block;
+}
+
+
+.home #burger-img {
     width: 100%;
+    opacity: 0.9;
+    display: block;
+    height: auto;
     
+}
+
+.home .overlay-text {
+    position: absolute;
+    left: 50%;
+    color: whitesmoke;
+    font-size: 34px;
+    transform: translate(-50%, -50%); 
+    font-weight: 700;
+}
+
+.home #brand-name {
+    top: 10%;
+}
+
+.home #text-home {
+    top: 20%;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 36px;
+}
+
+.menu img {
+    width: 350px;
+}
+
+.menu .menu-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 96px;
+    gap: 96px 0;
+}
+
+.menu h1 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.contact {
+    margin: 96px;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 12px;
 }
