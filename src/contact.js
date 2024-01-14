@@ -10,11 +10,11 @@ export function createContact() {
 
     const teltext = document.createElement("h4")
     teltext.classList.add("tel")
-    teltext.textContent = "Call us: 123 456 789"
+    teltext.textContent = "Call us: 📞 123 456 789"
 
     const visittext = document.createElement("h4")
     visittext.classList.add("visit")
-    visittext.textContent = "Visit us: 12 Hollywood Boulevard, Los Angeles, CA."
+    visittext.textContent = "Visit us: 🏠 12 Hollywood Boulevard, Los Angeles, CA."
 
     
     contact.appendChild(teltext)

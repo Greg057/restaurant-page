@@ -28,10 +28,16 @@ nav {
 nav button {
     font-size: 26px;
     font-family: Poppins;
-    font-size: 700;
     border: none;
     background-color: transparent;
     color: whitesmoke;
+    width: 175px;
+}
+
+nav button:hover {
+    border-radius: 4px;
+    background-color: whitesmoke;
+    color: black;
 }
 
 .home {
@@ -74,14 +80,23 @@ nav button {
 }
 
 .menu img {
-    width: 350px;
+    width: 450px;
 }
 
 .menu .menu-display {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 96px;
-    gap: 96px 0;
+    margin: 34px 96px;
+    gap: 96px 150px;
+}
+
+.menu .menu-item {
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 12px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    
 }
 
 .menu h1 {
@@ -90,7 +105,7 @@ nav button {
 }
 
 .contact {
-    margin: 96px;
+    margin: 96px 450px;
     padding: 42px;
     display: flex;
     flex-direction: column;
