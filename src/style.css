@@ -1,3 +1,40 @@
-img {
-    width: 200px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins;
+}
+
+#logo {
+    width: 150px;
+}
+
+.header {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 196px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    
+}
+
+nav button {
+    font-size: 26px;
+    font-family: Poppins;
+    font-size: 700;
+    border: none;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+#burger-img {
+    width: 100%;
+    
 }

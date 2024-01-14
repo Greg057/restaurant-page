@@ -1,14 +1,17 @@
-import BurgerImage from './image.jpg';
+import burger from './image.jpg';
 
-function createHome () {
-    const content = document.querySelector("#content")
-    createHeader()
-    const background = document.createElement("div")
+export function createHome () {
+    const main = document.createElement("div")
 
+    const burgerImg = document.createElement("img")
+    burgerImg.id = "burger-img"
+    burgerImg.src = burger
+
+    main.appendChild(burgerImg)
+    
+    return main
     
 }
 
-function createHeader() {
-    
-}
+
 
